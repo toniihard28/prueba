@@ -1,11 +1,10 @@
 public class Profesor {
-	private Asignatura nota1, nota2, nota3;
 
 	public Profesor() {
 		
 	}
 	
-	public void ponerNotas(Alumno c) {
+	public Alumno ponerNotas(Alumno c) {
 		double nota;
 
 		nota = Math.random() * 10;
@@ -13,7 +12,9 @@ public class Profesor {
 		nota = Math.random() * 10;
 		c.getbaseDeDatos().setNota(nota);
 		nota = Math.random() * 10;
-		c.getProgramacion().setNota(nota);	
+		c.getProgramacion().setNota(nota);
+		
+		return c;
 	}
 
 	public double calcularMedias(Alumno c) {

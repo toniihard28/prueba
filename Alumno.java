@@ -23,5 +23,13 @@ public class Alumno {
 	public Asignatura getbaseDeDatos() {
 		return this.baseDeDatos;
 	}
+	
+	public void setNota(double nota) {
+		this.nota = nota;
+	}
+	
+	public double getNota() {
+		return this.nota;
+	}
 
 }
