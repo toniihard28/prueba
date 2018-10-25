@@ -3,14 +3,12 @@ public class Asignatura {
 	private int id; 
 	private double nota;
 	
-
-	
 	public Asignatura(int id) {
 		this.id = id;
 	}
 
 	public double getNota() {
-		return nota;
+		return this.nota;
 	}
 
 	public void setNota(double nota) {
@@ -18,9 +16,8 @@ public class Asignatura {
 	}
 
 	public int getId() {
-		return id;
+		return this.id;
 	}
-	
 	
 }
 

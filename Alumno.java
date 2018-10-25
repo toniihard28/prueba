@@ -1,37 +1,27 @@
 public class Alumno {
 
-	private int id;
 	private double nota;
 	
-	Asignatura baseDeDatos;
-	Asignatura marcas;
-	Asignatura programacion;
-	public Alumno(Asignatura  baseDeDatos, Asignatura marcas, Asignatura programacion) {
-		
+	private Asignatura baseDeDatos;
+	private Asignatura marcas;
+	private Asignatura programacion;
+
+	public Alumno(Asignatura baseDeDatos, Asignatura marcas, Asignatura programacion) {
 		this.baseDeDatos =  baseDeDatos;
 		this.marcas = marcas;
 		this.programacion = programacion;
 	}
 
-	
-	public Alumno(int baseDeDatos, int marcas, int programacion) {
-		
-	}
-
-	
-
 	public Asignatura getMarcas() {
-		return marcas;
+		return this.marcas;
 	}
 
 	public Asignatura getProgramacion() {
-		return programacion;
+		return this.programacion;
 	}
 
-
 	public Asignatura getbaseDeDatos() {
-		
-		return baseDeDatos;
+		return this.baseDeDatos;
 	}
 
 }
